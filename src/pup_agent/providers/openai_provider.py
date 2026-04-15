@@ -7,7 +7,6 @@ import re
 from pup_agent.models import AgentDecision, ToolCallRecord, ToolSpec
 from pup_agent.providers.base import BaseProvider
 
-
 SYSTEM_PROMPT = """You are Pup Agent, a compact assistant with tool-use.
 You must decide either:
 1) use a tool, or
@@ -59,7 +58,9 @@ class OpenAIProvider(BaseProvider):
 
         tool_lines = "\n".join(f"- {t.name}: {t.description}" for t in tools)
         history_lines = "\n".join(
-            f"Step {h.step} | tool={h.tool_name} | input={h.tool_input!r} | output={h.tool_output!r}"
+            "Step "
+            f"{h.step} | tool={h.tool_name} | input={h.tool_input!r} "
+            f"| output={h.tool_output!r}"
             for h in history
         ) or "(empty)"
 

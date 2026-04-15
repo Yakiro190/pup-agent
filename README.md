@@ -1,5 +1,8 @@
 # Pup Agent 🐶
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
+
 A clean, production-style starter repository for a **working AI agent CLI**.
 
 Pup Agent can:
@@ -95,6 +98,18 @@ Built-in tools are workspace-scoped:
 ```bash
 pytest
 ```
+
+## Lint
+
+```bash
+ruff check src tests
+```
+
+## Community & Governance
+
+- [Contributing Guide](CONTRIBUTING.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Security Policy](SECURITY.md)
 
 ---
 
