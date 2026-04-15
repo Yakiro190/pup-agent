@@ -14,7 +14,6 @@ Pup Agent can:
 
 ```text
 .
-├── .github/workflows/ci.yml
 ├── docs/
 │   └── architecture.md
 ├── examples/
@@ -96,8 +95,6 @@ Built-in tools are workspace-scoped:
 ```bash
 pytest
 ```
-
-CI runs tests on every push/PR.
 
 ---
 
